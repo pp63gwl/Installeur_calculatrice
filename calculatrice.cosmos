@@ -1,0 +1,122 @@
+Auteur: pp63gwl
+Date: 28.10.2024
+Entreprise: DGEP
+Description: calculatrice
+
+Voici les ordres du programme calculatrice  :
+	
+	Afficher "\n\nBienvenue sur la calculatrice !\n\n".
+
+	Créer une zone mémoire nommée #operation.
+	Créer une zone mémoire nommée #choix_1.
+	Créer une zone mémoire nommée #choix_2.
+	Créer une zone mémoire nommée #resultat.
+	Créer une zone mémoire nommée #restart.
+	Créer une zone mémoire nommée #YouN.
+	
+	
+	
+	Répéter tant que #resultat != "N"
+		Créer une zone mémoire #texteReponse avec le texte "\nEcrivez le numéro (validez avec ENTER): ".
+		
+		//Demande à l'utilisateur l'opération qu'il veut
+		Afficher "\nQuelles opérations voulez-vous effectuez ? : 1) addition, 2) soustraction, 3) multiplication, 4)Inversion (1/x), 5) division, 6) racine, 7) puissance, 8) pourcent\n".
+		Afficher "#texteReponse".
+		Récupérer la saisie et la stocker dans la zone mémoire nommée #operation.
+		
+		//Addition
+		Si #operation == 1 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 2eme nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_2.
+			Copier le résultat de (#choix_1+#choix_2) dans #resultat.
+			Afficher "\n #choix_1 + #choix_2 = #resultat\n".
+		
+		//Soustraction
+		sinon si #operation == 2 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 2eme nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_2.
+			Copier le résultat de (#choix_1-#choix_2) dans #resultat.
+			Afficher "\n #choix_1 - #choix_2 = #resultat\n".
+		
+		//Multiplication
+		sinon si #operation == 3 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 2eme nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_2.
+			Copier le résultat de (#choix_1*#choix_2) dans #resultat.
+			Afficher "\n #choix_1 * #choix_2 = #resultat\n".
+		
+		//Inversion
+		sinon si #operation == 4 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Copier le résultat de (1/#choix_1) dans #resultat.
+			Afficher "\n 1/#choix_1= #resultat\n".
+		
+		//Division
+		sinon si #operation == 5 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 2eme nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_2.
+			Copier le résultat de (#choix_1 / #choix_2) dans #resultat.
+			Afficher "\n #choix_1/#choix_2 = #resultat\n".
+		
+		//racine
+		sinon si #operation == 6 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Copier le résultat de (racine carrée de #choix_1) dans #resultat.
+			Afficher "\n #choix_1^0.5 = #resultat\n".
+			
+		//puissance
+		sinon si #operation == 7 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 2eme nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_2.
+			Copier le résultat de (#choix_1^#choix_2) dans #resultat.
+			Afficher "\n #choix_1^#choix_2 = #resultat\n".
+			
+		//Pourcent
+		sinon si #operation == 8 alors
+			Créer une zone mémoire #texteReponse avec le texte "\nEntrez le 1er nombre (validez avec ENTER): ".
+			Afficher "#texteReponse".
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #choix_1.
+			Copier le résultat de (#choix_1/100) dans #resultat.
+			Afficher "\n #choix_1/100 = #resultat%\n".
+	
+		
+		?
+	//Propose à l'utilisateur de réutiliser la calculatrice
+	Afficher "\nVoulez-vous réutiliser la calculatrice?\n".
+	Afficher "\nY/N ?(validez avec ENTER) : \n".
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #YouN.
+	
+	Si #YouN == "Y" alors
+		#resultat = "Y".
+	sinon si #YouN == "N" alors
+		#resultat = "N".
+			
+	?
+	>>
+	
+	Afficher "\nAu revoir".
+Fin de la transmission.
